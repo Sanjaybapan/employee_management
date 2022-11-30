@@ -1,0 +1,56 @@
+<html>
+
+     <head>
+            <title>Update</title>
+     </head>
+
+     <body>
+	 
+            <form method='POST' action="/update/{{d.0}}">
+			
+			
+     <table>
+             
+			
+	 
+     <tr>
+                      <td>Id:</td>
+		    <td><input type="int" name="id"value="{{d.1}}"/></td>
+                         </tr>
+    			<tr>
+              		<td>Ename:</td>
+		    <td><input type="text" name="ename"value="{{d.2}}"/></td>
+		    </tr>
+                     <tr>
+  		    <td>Iname:</td>
+		    <td><input type="text" name="iname"value="{{d.3}}"/></td>
+		    </tr>
+                    <td>Detail:</td>
+		    <td><input type="text" name="detail"value="{{d.4}}"/></td>
+                         </tr>
+    			<tr>
+              		<td>Sex:</td>
+		    <td><input type="text" name="sex"value="{{d.5}}"/></td>
+		    </tr>
+                     <tr>
+  		    <td>Age:</td>
+		    <td><input type="int" name="age"value="{{d.6}}"/></td>
+		    </tr>
+                    <td>Salary:</td>
+		    <td><input type="float" name="salary"value="{{d.7}}"/></td>
+                         </tr>
+    			<tr>
+              		<td>Doj:</td>
+		    <td><input type="date" name="doj"value="{{d.8}}"/></td>
+		    </tr>       
+      		     <tr>            
+                <td><input type ='submit' name='send' value='update'/></td>
+                 </tr>
+
+         </table>
+		   
+        </form>
+
+      </body>
+
+</html>

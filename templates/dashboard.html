@@ -1,0 +1,51 @@
+<html>
+
+      <head>
+              <title>Employee Management|Dashboard</title>
+      </head>
+	  
+      <body BGCOLOR=yellow>
+       
+	   <h1><font color=green>Employee Management</h1></font>
+              <a href="/form">Employee records</a>
+              <table border='1' align='center'>
+		<br><br>	  
+              <tr>
+                  <th>id</th>
+                  <th>Ename</th>
+                 <th>Iname</th>
+                 <th>detail</th>
+                  <th>Gender</th>
+		<th>Age</th>
+                   <th>Salary</th>
+                   <th>Doj</th>
+                    <th>Edit</th>
+                      <th>Delete</th>
+                   </tr>	  
+			  
+          {% for x in d : %}
+		  
+              <tr>
+                <td>{{x.0}}</td>
+                  <td>{{x.1}}</td>
+                   <td>{{x.2}}</td>
+		<td>{{x.3}}</td>
+	         <td>{{x.4}}</td>
+                  <td>{{x.5}}</td>
+		<td>{{x.6}}</td>
+	         <td>{{x.7}}</td>
+             
+		
+        
+						  
+                  <td> <a href='/edit/{{x.0}}'>Edit</a></td>
+                  <td> <a href='/delete/{{x.0}}'>Delete</a></td>
+
+              </tr>
+
+             {% endfor %}
+			 
+			 
+         </body>
+
+</html>

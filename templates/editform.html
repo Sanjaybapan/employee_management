@@ -1,0 +1,51 @@
+<html>
+
+     <head>
+            <title>Employee Management|Update</title>
+     </head>
+
+             <body>
+	 
+                   <form method='POST' action="/update/{{d.0}}">
+                   <table>
+                    
+					<tr>
+					<td>id:</td>
+					<td><input type="number" name="id" value="{{d.2}}"></td>
+    	            <tr>
+              	    <td>Ename:</td>
+		    <td><input type="text" name="ename"value="{{d.3}}"/></td>
+		    </tr>
+                     <tr>
+  		    <td>Iname:</td>
+		    <td><input type="text" name="iname"value="{{d.4}}"/></td>
+		    </tr>
+                    <td>Detail:</td>
+		    <td><input type="text" name="detail"value="{{d.5}}"/></td>
+                    </tr>
+    		    <tr>
+              	    <td>Gender:</td>
+		    <td><input type="text" name="Gender"value="{{d.6}}"/></td>
+		    </tr>
+                     <tr>
+  		    <td>Age:</td>
+		    <td><input type="number" name="age"value="{{d.7}}"/></td>
+		    </tr>
+                    <td>Salary:</td>
+		    <td><input type="number" name="salary"value="{{d.8}}"/></td>
+                     </tr>
+    	            <tr>
+              	    <td>Doj:</td>
+		    <td><input type="date" name="doj"value="{{d.9}}"/></td>
+		    </tr>       
+      		     <tr>            
+                <td><input type ='submit' name='send' value='update'/></td>
+                 </tr>
+
+         </table>
+		   
+        </form>
+
+      </body>
+
+</html>
